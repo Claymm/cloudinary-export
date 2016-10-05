@@ -36,7 +36,7 @@ function downloadImages (urls, callback)
             }
         }), 10, function (err) {
             if (err) return console.error(err);
-            console.log('===> '+urls.count()+' images retrieved...');
+            console.log('===> '+urls.length+' images retrieved...');
             callback();
         });
     });
